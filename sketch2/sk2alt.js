@@ -9,7 +9,7 @@ function setup(){
 	createCanvas(720,480);
 	var button = createButton ('add particle');
 	button.mousePressed(addparticle); 
-	setTimeout(10,goOut); //not sure whats up w this
+	setTimeout(goOut, 1000); //not sure whats up w this
 } 
 
 function draw(){
@@ -35,7 +35,6 @@ function mouseClicked(){
 console.log("HELLO!");
 }
 
-
 function goOut(){ 
-window.location = "https://canvas.ocadu.ca/courses/27272/assignments/syllabus";
+window.location = "https://google.com";
 } 
