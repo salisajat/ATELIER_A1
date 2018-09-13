@@ -10,8 +10,12 @@ function setup(){
 }
 
 function draw(){
-	for (var i = 0; i <mouseclicks.length; i++) { 
+	background(70);
+	ellipse (mouseX,mouseY, 10); 
+	for (var i = 0; i < mouseclicks.length; i++) { 
 	ellipse (mouseclicks[i].x, mouseclicks[i].y, 10); 
+	mouseclicks[i].x = mouseclicks[i].x +mouseclicks[i].a; 
+	mouseclicks[i].y = mouseclicks[i].y +mouseclicks[i].a; 
 }
 	
 }
@@ -19,7 +23,8 @@ function draw(){
 function mouseClicked(){
 		var clickposition = {
 			x: mouseX,
-			y: mouseY
+			y: mouseY,
+			a: 4
 		}
 	mouseclicks.push(clickposition); 
 }
