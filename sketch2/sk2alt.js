@@ -9,7 +9,7 @@ function setup(){
 	createCanvas(720,480);
 	var button = createButton ('add particle');
 	button.mousePressed(addparticle); 
-	setTimeout(goOut, 1000); //not sure whats up w this
+	setTimeout(goOut, 10000); //not sure whats up w this
 } 
 
 function draw(){
